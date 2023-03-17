@@ -14,4 +14,3 @@ spec:
   repo: https://github.com/spimmer/fleet-templates.git
   targets:
   - clusterName: "downstream"
-  - clusterName: "local"
