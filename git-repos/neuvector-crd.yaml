@@ -9,8 +9,8 @@ spec:
 #  clientSecretName: <secretname>
   insecureSkipTLSVerify: false
   paths:
-  - apps/neuvector-crd
+  - /apps/neuvector-crd
   paused: false
   repo: https://github.com/spimmer/fleet-templates.git
 #  targets:
-#  - clusterName: <clustername>
+#  - clusterName: "downstream"

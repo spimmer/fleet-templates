@@ -9,7 +9,7 @@ spec:
 #  clientSecretName: <secretname>
   insecureSkipTLSVerify: false
   paths:
-  - apps/neuvector-core
+  - /apps/neuvector-core
   paused: false
   repo: https://github.com/spimmer/fleet-templates.git
 #  targets:
