@@ -1,0 +1,18 @@
+---
+defaultNamespace: cattle-neuvector-system
+helm:
+  releaseName: neuvector-core
+  chart: chart/.
+  version: 2.4.2
+  values:
+    global:
+      cattle:
+        url: https://rancher-spim.sva.wtf/
+    controller:
+      replicas: 1
+      ranchersso:
+        enabled: true
+    scanner:
+      replicas: 1
+    k3s:
+      enabled: true
