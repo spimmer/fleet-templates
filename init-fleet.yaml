@@ -1,0 +1,14 @@
+---
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: fleet-config
+  namespace: fleet-local
+spec:
+  branch: master
+  clientSecretName: 
+  insecureSkipTLSVerify: false
+  paths:
+  - /git-repos/
+  repo: https://github.com/spimmer/fleet-templates.git
+  targets: []
