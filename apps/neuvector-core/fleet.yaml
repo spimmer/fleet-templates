@@ -19,3 +19,5 @@ helm:
       enabled: true
     crdwebhook:
       enabled: false
+dependsOn:
+  - name: neuvector-crd-apps-neuvector-crd 
