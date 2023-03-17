@@ -11,4 +11,4 @@ spec:
   paths:
   - /git-repos/
   repo: https://github.com/spimmer/fleet-templates.git
-  targets: []
+#  targets: []
