@@ -71,4 +71,4 @@ diff:
       operations:
         - { 'op': 'remove', 'path': '/imagePullSecrets' }
 dependsOn:
-  - name: monitoring-crd-apps-monitoring-crd
+  - name: rancher-monitoring-crd-apps-rancher-monitoring-crd 
