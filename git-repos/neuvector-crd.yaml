@@ -1,0 +1,16 @@
+---
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: neuvector-crd
+  namespace: fleet-default
+spec:
+  branch: main
+#  clientSecretName: <secretname>
+  insecureSkipTLSVerify: false
+  paths:
+  - apps/neuvector-crd
+  paused: false
+  repo: https://github.com/spimmer/fleet-templates.git
+#  targets:
+#  - clusterName: <clustername>
