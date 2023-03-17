@@ -12,5 +12,5 @@ spec:
   - /apps/neuvector-core
   paused: false
   repo: https://github.com/spimmer/fleet-templates.git
-#  targets:
-#  - clusterName: <clustername>
+  targets:
+  - clusterName: "downstream"

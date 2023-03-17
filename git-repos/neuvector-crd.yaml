@@ -12,5 +12,5 @@ spec:
   - /apps/neuvector-crd
   paused: false
   repo: https://github.com/spimmer/fleet-templates.git
-#  targets:
-#  - clusterName: "downstream"
+  targets:
+  - clusterName: "downstream"
