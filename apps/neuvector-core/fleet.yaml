@@ -16,3 +16,5 @@ helm:
       replicas: 1
     k3s:
       enabled: true
+    crdwebhook:
+      enabled: false
