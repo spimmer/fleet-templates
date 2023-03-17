@@ -5,7 +5,7 @@ metadata:
   name: fleet-config
   namespace: fleet-local
 spec:
-  branch: master
+  branch: testing
   clientSecretName: 
   insecureSkipTLSVerify: false
   paths:
