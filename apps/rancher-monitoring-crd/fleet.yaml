@@ -1,0 +1,17 @@
+---
+defaultNamespace: cattle-monitoring-system
+helm:
+  releaseName: rancher-monitoring-crd
+  chart: rancher-monitoring-crd
+  repo: https://charts.rancher.io
+  version: 100.1.3+up19.0.3
+diff:
+  comparePatches:
+  - apiVersion: policy/v1beta1
+    kind: PodSecurityPolicy
+    operations:
+    - {"op":"remove", "path":"/spec/hostIPC"}
+    - {"op":"remove", "path":"/spec/hostNetwork"}
+    - {"op":"remove", "path":"/spec/hostPID"}
+    - {"op":"remove", "path":"/spec/privileged"}
+    - {"op":"remove", "path":"/spec/readOnlyRootFilesystem"}
