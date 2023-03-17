@@ -5,7 +5,7 @@ metadata:
   name: neuvector-crd
   namespace: fleet-default
 spec:
-  branch: main
+  branch: testing
 #  clientSecretName: <secretname>
   insecureSkipTLSVerify: false
   paths:
