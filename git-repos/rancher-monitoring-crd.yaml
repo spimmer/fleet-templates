@@ -1,0 +1,16 @@
+---
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: rancher-monitoring-crd
+  namespace: fleet-default
+spec:
+  branch: testing
+#  clientSecretName: <secretname>
+  insecureSkipTLSVerify: false
+  paths:
+  - /apps/rancher-monitoring-crd
+  paused: false
+  repo: https://github.com/spimmer/fleet-templates.git
+  targets:
+  - clusterName: "downstream"
