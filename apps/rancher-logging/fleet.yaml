@@ -1,0 +1,14 @@
+---
+defaultNamespace: cattle-logging-system
+helm:
+  repo: https://charts.rancher.io
+  chart: rancher-logging
+  releaseName: rancher-logging
+  version: 100.1.3+up3.17.7
+  values:
+    rke:
+      enabled: false
+    rke2:
+      enabled: true
+dependsOn:
+    - name: rancher-logging-crd-apps-rancher-monitoring-crd 
