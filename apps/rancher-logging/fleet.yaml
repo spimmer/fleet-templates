@@ -15,4 +15,4 @@ helm:
       rke2:
         enabled: true
 dependsOn:
-    - name: rancher-logging-crd-apps-rancher-monitoring-crd 
+    - name: rancher-logging-crd-apps-rancher-logging-crd 
