@@ -1,0 +1,7 @@
+---
+defaultNamespace: cattle-resources-system
+kustomize:
+  dir: base
+dependsOn:
+  - name: rancher-backup-apps-rancher-backup
+  - name: rancher-backup-crd-apps-rancher-backup-crd

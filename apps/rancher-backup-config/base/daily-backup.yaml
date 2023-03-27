@@ -1,0 +1,36 @@
+apiVersion: resources.cattle.io/v1
+kind: Backup
+metadata:
+  name: daily
+  annotations:
+    field.cattle.io/description: Daily backup a 12:30 AM to S3
+  labels:
+    {}
+spec:
+  encryptionConfigSecretName: ''
+  resourceSetName: rancher-resource-set
+  retentionCount: 5
+  schedule: 30 0 * * *
+  storageLocation:
+    s3:
+      bucketName: bkp-rancher
+      credentialSecretName: rancher-backup-s3
+      credentialSecretNamespace: cattle-system
+      endpoint: minio.thanos-poc.sva.wtf:9000
+      endpointCA: |-
+        LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUI4akNDQVplZ0F3SUJBZ0lSQUtwb3QxaXFY
+        N1dIMkxPdnptQzBrL3d3Q2dZSUtvWkl6ajBFQXdJd096RWMKTUJvR0ExVUVDaE1UUTJWeWRHZGxi
+        aUJFWlhabGJHOXdiV1Z1ZERFYk1Ca0dBMVVFQ3d3U2NtOXZkRUIwYUdGdQpiM010YldsdWFXOHhN
+        QjRYRFRJek1ETXlNekE1TVRJeE1sb1hEVEkwTURNeU1qQTVNVEl4TWxvd096RWNNQm9HCkExVUVD
+        aE1UUTJWeWRHZGxiaUJFWlhabGJHOXdiV1Z1ZERFYk1Ca0dBMVVFQ3d3U2NtOXZkRUIwYUdGdWIz
+        TXQKYldsdWFXOHhNRmt3RXdZSEtvWkl6ajBDQVFZSUtvWkl6ajBEQVFjRFFnQUVVTlJQRG9PNTJM
+        Q3A1SWFXWlJheQpXUGd2dGV0RnNXSG1BNndzeXM0Rm5TWS80QktBL2J2aEsydmhnSlEwZnExcGt4
+        U28yUEhwRWp3QTJja1lhT296CmM2TjhNSG93RGdZRFZSMFBBUUgvQkFRREFnS2tNQk1HQTFVZEpR
+        UU1NQW9HQ0NzR0FRVUZCd01CTUE4R0ExVWQKRXdFQi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZL
+        a0hTcFYzU1BDWGwvTFY4NU9BMnRYc1U3d3VNQ01HQTFVZApFUVFjTUJxQ0dHMXBibWx2TG5Sb1lX
+        NXZjeTF3YjJNdWMzWmhMbmQwWmpBS0JnZ3Foa2pPUFFRREFnTkpBREJHCkFpRUFoRTNZSnFjZ0w1
+        UDltQmhPZmNKencrdG5iR2FuaWR1N3hIY3JHa3cxWXYwQ0lRRFMvbVR4blJkb0kwMFYKNmtjL21s
+        cVBXQU9MZ0ZFd2VpemZPNFMvNWdyeUN3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+#      folder: string
+#      insecureTLSSkipVerify: boolean
+#      region: string
