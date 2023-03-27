@@ -1,0 +1,18 @@
+---
+defaultNamespace: cattle-resources-system
+helm:
+  repo: https://charts.rancher.io
+  chart: rancher-backup
+  releaseName: rancher-backup
+  version: 3.0.0
+  values:
+    s3:
+      enabled: false
+      credentialSecretName: ""
+      credentialSecretNamespace: ""
+      region: ""
+      bucketName: ""
+      folder: ""
+      endpoint: ""
+      endpointCA: ""
+      insecureTLSSkipVerify: false
