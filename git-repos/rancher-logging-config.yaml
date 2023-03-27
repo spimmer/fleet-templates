@@ -13,4 +13,4 @@ spec:
   paused: false
   repo: https://github.com/spimmer/fleet-templates.git
   targets:
-  - clusterName: "downstream"
+  - clusterName: "local"
