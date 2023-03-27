@@ -2,14 +2,14 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: rancher-logging-config
+  name: rancher-backup-config
   namespace: fleet-local
 spec:
   branch: testing
 #  clientSecretName: <secretname>
   insecureSkipTLSVerify: false
   paths:
-  - /apps/rancher-logging-config
+  - /apps/rancher-backup-config
   paused: false
   repo: https://github.com/spimmer/fleet-templates.git
   targets:
